@@ -1,0 +1,64 @@
+# Baseline device and simulation settings (same values as sic-mosfet-devsim v1.1-frozen)
+
+numerics:
+  extended_precision: false     # 128-bit only for the 1D checks; the 2D runs use double precision
+  incomplete_ionization: true
+  holes: false                  # false = electron-only model (holes in equilibrium with source/body)
+  tol: {absolute_error: 1.0e10, relative_error: 1.0e-6, maximum_iterations: 40}
+
+material:                       # overrides of sicdev/params.py defaults
+  surf_lambda_um: 0.003
+  mu_surf300: 20.0
+  mu_surf_gamma: 1.0            # channel (surface) mobility ~ (T/300)^+1
+
+gate: {phi_m: 4.1}              # n+ poly-Si
+
+interface:
+  qf_cm2: 1.0e12                # fixed positive oxide charge
+  qit_eff_cm2: -1.0e12          # effective trapped interface charge (static, signed)
+
+pn_diode: {length_um: 10.0, xj_um: 2.0, NA: 1.0e18, ND: 1.0e16, straggle_um: 0.01}
+
+moscap: {tox_um: 0.05, length_um: 3.0, NA: 1.0e17}
+
+mosfet:
+  geometry:                     # um, x = 0 is the cell symmetry line under the source contact
+    tox_um: 0.05
+    x_pp_um: 0.5                # p+ body contact region width
+    d_pp_um: 0.3
+    x_ns0_um: 0.5               # n+ source start
+    x_ns1_um: 1.8               # n+ source end = channel start
+    d_ns_um: 0.25
+    x_pw_um: 2.3                # P-well edge = channel end (L_ch = 0.5 um)
+    d_pw_um: 0.7
+    wjfet_um: 2.4               # full JFET width (the half-cell has wjfet/2)
+    d_jfet_um: 1.0
+    t_drift_um: 10.0
+    t_sub_um: 1.0
+    x_src_contact_um: 1.4
+    x_ox_start_um: 1.5
+  mesh_scale: 1.5               # 1.0 = fine, 1.5 = medium (used), 2.0 = coarse
+  doping:                       # cm^-3
+    N_pp: 1.0e19
+    N_ns: 2.0e19
+    N_pw: 1.0e17
+    N_jfet: 2.0e16
+    N_drift: 1.0e16
+    N_sub: 1.0e19
+    straggle_um: 0.03
+
+bias:
+  vds_lin: 0.1
+  vgs_segments: [[10.0, 0.25], [20.0, 0.5]]   # transfer: 0 -> 10 V step 0.25, 10 -> 20 V step 0.5
+  vgs_on: 18.0                               # gate bias of the output curve
+  vds_segments: [[0.5, 0.1], [5.0, 0.5]]     # output: 0.1 -> 0.5 V step 0.1, -> 5 V step 0.5
+  vds_required: 2.0                          # output curve may stop early only beyond this VDS
+
+extract:
+  icc_A_per_cm: 1.0e-4                       # Vth: constant-current criterion at VDS = vds_lin
+  ss_window_A_per_cm: [1.0e-10, 1.0e-6]
+  vgs_on: 18.0                               # Ion
+  ron_vds_max: 0.5                           # Ron,sp from the output curve for VDS <= 0.5 V
+  feature_vgs: [4, 5, 6, 7, 8, 10, 12, 14, 16, 18, 20]
+
+temperatures_K: [300, 423]

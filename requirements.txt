@@ -1,0 +1,8 @@
+# Python 3.12, Linux x86-64. mkl is required: the devsim wheel needs a BLAS/LAPACK library at import time.
+devsim==2.11.0
+mkl==2026.1.0
+numpy==2.5.3
+scipy==1.18.1
+matplotlib==3.11.2
+PyYAML==6.0.3
+scikit-learn==1.9.1
