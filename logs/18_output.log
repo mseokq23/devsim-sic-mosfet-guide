@@ -1,0 +1,26 @@
+(check: phi_n at y = 10 um is 99.83 mV at x = 0.05 um and 99.83 mV at x = 3.45 um)
+VGS = 18.0 V, VDS = 0.1 V: electron quasi-Fermi potential along the path
+                  source contact -> channel start (x=1.80, y=0)   :    1.4 mV ( 1.4 %)
+     channel start (x=1.80, y=0) -> channel end (x=2.30, y=0)     :   36.1 mV (36.1 %)
+       channel end (x=2.30, y=0) -> JFET bottom (x=3.45, y=1.0)   :   21.5 mV (21.5 %)
+     JFET bottom (x=3.45, y=1.0) -> drift bottom (x=3.45, y=10.0) :   40.8 mV (40.8 %)
+   drift bottom (x=3.45, y=10.0) -> drain contact                 :    0.2 mV ( 0.2 %)
+
+14 points, 81 solves (0 failed), 45.8 s
+ VDS (V)  ID (A/cm)  JD (A/cm2)
+    0.10     0.0176       50.37
+    0.20     0.0352      100.49
+    0.30     0.0526      150.37
+    0.40     0.0700      200.01
+    0.50     0.0873      249.41
+    1.00     0.1725      492.96
+    1.50     0.2558      730.94
+    2.00     0.3373      963.59
+    2.50     0.4169     1191.14
+    3.00     0.4948     1413.82
+    3.50     0.5711     1631.82
+    4.00     0.6458     1845.27
+    4.50     0.7190     2054.31
+    5.00     0.7907     2259.05
+Ron,sp (VDS <= 0.5 V, line through the origin) = 2.0003 mOhm cm^2
+saved docs/img/18/output.png

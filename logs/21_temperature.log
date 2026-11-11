@@ -1,0 +1,28 @@
+423 K run: converged True, 92 solves, 53.1 s
+
+                        300 K      423 K     change
+Vth (V)                 3.765       3.53   -0.234 V
+SS (mV/dec)             112.5      155.7    +38.5 %
+gm,max (S/cm)        0.003862   0.004555    +18.0 %
+Ion (A/cm)            0.01763    0.01223    -30.6 %
+Ron,sp (mOhm cm2)           2      2.871    +43.5 %
+ID(2 V) (A/cm)         0.3373     0.2397    -28.9 %
+
+what changes with temperature (model inputs):
+  Vt = kT/q                      25.85 ->   36.45 mV, ideal SS = ln10 kT/q: 59.5 -> 83.9 mV/dec
+  ni                           1.52e-08 -> 3.01e+00 cm^-3
+  P-well Al ionized (neutral)  17.8 -> 51.7 %
+  surface mobility mu_surf     20.0 -> 28.2 cm2/Vs  (~ T^+1)
+  bulk mobility JFET 2e16      815 -> 371 cm2/Vs
+  bulk mobility drift 1e16     865 -> 388 cm2/Vs
+
+long-channel MOS formula, NA = 9e16 (net), Qf + Qit = 0:
+                       phi_m - phi_i    psi_B  2|psi_B|   Qd/Cox     Vth
+    300 K                     -1.210   -1.431     2.862    3.855   4.077
+    423 K                     -1.192   -1.360     2.720    3.758   3.926
+  change -0.151 V (formula) vs -0.234 V (simulation, ID = 1e-4 A/cm)
+
+share of VDS = 0.1 V at VGS = 18 V (quasi-Fermi potential drop), and the same in mOhm cm^2:
+  300 K: source 1.4 % (0.03), channel 36.1 % (0.72), JFET 21.5 % (0.43), drift + substrate 41.0 % (0.82)
+  423 K: source 0.8 % (0.02), channel 17.7 % (0.51), JFET 19.4 % (0.56), drift + substrate 62.2 % (1.79)
+saved docs/img/21/temperature.png

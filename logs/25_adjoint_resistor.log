@@ -1,0 +1,7 @@
+V = 1.0 V: circuit current V1.I = -1.441959e+03 A/cm^2, q ND mu V / L = 1.441959e+03 (V1.I has the opposite sign of the current in the bar)
+
+adjoint: one transposed solve for both parameters, 5.9 ms, 204 unknowns (Potential, Electrons, V1.I, right_bias)
+ theta  adjoint dI/dtheta    re-solve FD        formula  adj vs formula
+  mu_n    -1.60217663e+00 -1.60217663e+00 -1.60217663e+00         7.8e-11
+    ND    -1.44195897e-13 -1.44195897e-13 -1.44195897e-13         1.1e-10
+time: adjoint 5.9 ms (both parameters), re-solve FD 12.1 ms (4 nonlinear solves)

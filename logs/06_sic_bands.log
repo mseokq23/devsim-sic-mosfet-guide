@@ -1,0 +1,9 @@
+ T (K)   Vt (V)  Eg (eV)  Nc (cm-3)  Nv (cm-3)  ni SiC (cm-3) Ec-Ei (eV)  ni Si (cm-3)
+   300  0.02585   3.2300  1.690e+19  2.490e+19      1.518e-08     1.6100     1.067e+10
+   423  0.03645   3.1991  2.830e+19  4.169e+19      3.009e+00     1.5925     1.599e+13
+   600  0.05170   3.1434  4.780e+19  7.043e+19      3.646e+06     1.5617     3.892e+15
+
+minority carriers in equilibrium (p = ni^2 / n):
+  n-type 1e+16 cm^-3 at 300 K: p = 2.30e-32 cm^-3
+  n-type 2e+19 cm^-3 at 300 K: p = 1.15e-35 cm^-3
+saved docs/img/06/ni_eg.png

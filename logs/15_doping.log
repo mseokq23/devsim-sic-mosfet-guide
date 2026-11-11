@@ -1,0 +1,8 @@
+interface nodes: 62, sum of IntfLen = 2.0000 um (oxide length 2.0000 um)
+sheet charge q(Qf + Qit) = 0.000e+00 C/cm^2 (Qf = 1.0e+12, Qit = -1.0e+12 cm^-2)
+example interface node x = 3.3415 um: IntfLen = 113.81 nm, NodeVolume = 6.828e-13 cm^2, sheet -> volume factor IntfLen/NodeVolume = 1.667e+07 1/cm
+net doping at x = 0.992 um (n+ source / P-well): y=0.00: +2.0e+19, y=0.10: +2.0e+19, y=0.30: +9.4e+16, y=0.50: -9.0e+16
+net doping at x = 2.050 um (channel center): y=0.00: -9.0e+16, y=0.10: -9.0e+16, y=0.30: -9.0e+16, y=0.50: -9.0e+16
+net doping at x = 3.031 um (JFET region): y=0.00: +2.0e+16, y=0.10: +2.0e+16, y=0.30: +2.0e+16, y=0.50: +2.0e+16
+saved docs/img/15/doping.png
+saved docs/img/15/surf_factor.png

@@ -13,7 +13,7 @@ velog 시리즈 **DEVSIM SiC MOSFET** 의 코드, 로그, 그림이 전부 여�
 | SS | 112.5 mV/dec | 155.7 mV/dec |
 | R<sub>on,sp</sub> (V<sub>GS</sub> = 18 V) | 2.000 mΩ·cm² | 2.871 mΩ·cm² |
 | 메시 검증 (medium vs fine) | Vth 0.03 mV, Ron 0.9 % | |
-| 역추정 (논문 데이터, GP) | 300 K 특징 0.112 → 300 + 423 K 특징 0.072 | |
+| 역추정 MAE<sub>norm</sub> (논문 데이터, GP) | 300 K 특징 0.112 → 300 + 423 K 특징 0.072 | |
 | adjoint 민감도 vs 다시 풀기 | 상대 차이 4e-6 이하 | |
 
 ## 시작
@@ -59,39 +59,39 @@ docs/img/        포스트에 쓴 그림 (폴더 번호 = 포스트 번호)
 
 | 편 | 내용 | 스크립트 |
 |---|---|---|
-| 1 | 시작하며 | - |
-| 2 | 실습 환경 | `02_check_env.py` |
+| 1 | 시작하며 - 왜 DEVSIM인지, 진행 순서 | - |
+| 2 | 실습 환경 - Codespaces, DEVSIM + MKL 설치 | `02_check_env.py` |
 | 3 | 이론 1 - 반도체 소자 방정식 | - |
 | 4 | 이론 2 - 유한체적법, Scharfetter-Gummel, Newton | `04_sg_vs_central.py` |
-| 5 | DEVSIM 구조 - 1D 저항 | `05_resistor_1d.py` |
-| 6 | 4H-SiC 물성 1 - 밴드갭, 상태밀도, n<sub>i</sub> | `06_sic_bands.py` |
+| 5 | DEVSIM 구조 - 1D 저항 직접 짜기 | `05_resistor_1d.py` |
+| 6 | 4H-SiC 물성 1 - 밴드갭, 상태밀도, 진성 캐리어 농도 | `06_sic_bands.py` |
 | 7 | 4H-SiC 물성 2 - 불완전 이온화 | `07_ionization.py` |
 | 8 | 4H-SiC 물성 3 - 이동도 | `08_mobility.py` |
-| 9 | 1D PN 다이오드 1 - 메시, 도핑, 평형 | `09_pn_equilibrium.py` |
-| 10 | 1D PN 다이오드 2 - 해석해 비교, 정밀도 | `10_pn_check.py` |
+| 9 | 1D PN 다이오드 1 - 메시, 도핑, 평형 해 | `09_pn_equilibrium.py` |
+| 10 | 1D PN 다이오드 2 - 손계산 비교, 계산 정밀도 | `10_pn_check.py` |
 | 11 | 1D MOS 커패시터 1 - 게이트, 산화막, 계면 | `11_moscap_bands.py` |
 | 12 | 1D MOS 커패시터 2 - Vfb, Vth, C-V | `12_moscap_cv.py` |
 | 13 | 평판형 SiC MOSFET 구조와 half-cell | `13_structure.py` |
-| 14 | 2D 메시 | `14_mesh.py` |
-| 15 | 도핑, 계면전하, 표면 이동도 | `15_doping.py` |
-| 16 | 평형 해와 전자만 푸는 이유 | `16_equilibrium.py` |
-| 17 | 전달 특성 | `17_transfer.py` |
-| 18 | 출력 특성과 R<sub>on,sp</sub> | `18_output.py` |
-| 19 | 특징 추출 | `19_features.py` |
-| 20 | 메시, 정밀도, 반복성 검증 | `20_mesh_study.py` |
+| 14 | 2D 메시 만들기 | `14_mesh.py` |
+| 15 | 도핑, 계면전하, 표면 이동도 넣기 | `15_doping.py` |
+| 16 | 평형 해와 전자 방정식만 푸는 이유 | `16_equilibrium.py` |
+| 17 | 전달 특성 ID-VGS | `17_transfer.py` |
+| 18 | 출력 특성과 비온저항 R<sub>on,sp</sub> | `18_output.py` |
+| 19 | 특징 추출 - Vth, SS, gm, R<sub>on,sp</sub> | `19_features.py` |
+| 20 | 결과 검증 - 메시, 정밀도, 반복성 | `20_mesh_study.py` |
 | 21 | 300 K vs 423 K | `21_temperature.py` |
-| 22 | 공정 파라미터 하나씩 바꾸기 | `22_one_at_a_time.py` |
-| 23 | 여러 run 자동화 | `23_doe.py` |
-| 24 | 특징으로 공정 파라미터 역추정 | `24_inverse_gp.py` |
-| 25 | adjoint 민감도 1 - 원리, 1D | `25_adjoint_resistor.py` |
+| 22 | 공정 파라미터 하나씩 바꿔보기 | `22_one_at_a_time.py` |
+| 23 | 대량 계산 자동화 - worker, runner, Sobol 설계 | `23_doe.py` |
+| 24 | I-V 특징으로 공정 파라미터 역추정 | `24_inverse_gp.py` |
+| 25 | adjoint 민감도 1 - 원리와 1D 예제 | `25_adjoint_resistor.py` |
 | 26 | adjoint 민감도 2 - SiC MOSFET | `26_adjoint_mosfet.py` |
-| 27 | 정리 | - |
+| 27 | 정리와 다음 단계 | - |
 
 ## 한 번에 다시 돌리기
 
 ```bash
 git clone https://github.com/mseokq23/sic-mosfet-devsim.git ../sic-mosfet-devsim   # 24편에서 씀
-bash run_all.sh        # 2-core에서 약 45분, logs/ 를 다시 씀
+bash run_all.sh        # 2-core에서 약 40분, logs/ 를 다시 씀
 ```
 
 22, 23편은 `results/oat`, `results/doe`에 이미 있는 run을 건너뜀. 처음부터 다시 계산하려면 두 폴더를 지우고 돌리면 됨.

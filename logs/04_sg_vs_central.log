@@ -1,0 +1,7 @@
+total potential change = 20 Vt = 0.517 V
+cells  dpsi/Vt per edge  max |err| central  max |err| SG  max n central
+   40               0.5          7.879e-03     2.331e-15          1.000
+    8               2.5          1.932e-01     4.441e-16          1.111
+    4               5.0          4.852e-01     4.441e-16          1.478
+saved docs/img/04/sg_vs_central.png
+saved docs/img/04/bernoulli.png

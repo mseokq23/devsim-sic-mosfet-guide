@@ -1,0 +1,9 @@
+gate work function 4.1 eV, SiC: chi = 3.7 eV, Ec - Ei = 1.6100 eV
+gate boundary condition: Potential = VG - (phi_m - chi - (Ec - Ei)) = VG - (-1.2100 V)
+nodes: oxide 27, SiC 138
+ VG (V)  psi_s - psi_bulk (V)  n surface (cm-3)  p surface (cm-3)
+  -6.00               -0.1535         3.422e-35         6.733e+18
+  -2.65               -0.0010         1.244e-32         1.852e+16
+   1.00                1.1371         1.638e-13         1.406e-03
+   8.00                3.0518         2.404e+19         9.585e-36
+saved docs/img/11/moscap_bands.png

@@ -1,0 +1,11 @@
+pool 512 devices, test 128 devices, 34 features per device (17 per temperature)
+S1 (300 K)        MAE_norm mean 0.112275 | W_JFET 0.1083  N_pw 0.1573  Qit 0.0712
+S2 (300 + 423 K)  MAE_norm mean 0.072011 | W_JFET 0.0505  N_pw 0.1133  Qit 0.0522
+(MAE_norm = |estimate - true| / parameter range; guessing the range center gives 0.25)
+
+step 23 devices (16), S2 model: MAE_norm mean 0.0816 | W_JFET 0.0579  N_pw 0.1297  Qit 0.0573
+  D00: true W 1.032 N 1.096 Qit -5.18e+11 | estimate W 1.036 N 0.981 Qit -6.44e+11
+  D01: true W 0.975 N 0.918 Qit -1.30e+12 | estimate W 0.959 N 0.932 Qit -1.29e+12
+  D02: true W 0.874 N 1.129 Qit -9.71e+11 | estimate W 0.887 N 1.023 Qit -1.09e+12
+  D03: true W 1.132 N 0.858 Qit -1.19e+12 | estimate W 1.107 N 0.850 Qit -1.19e+12
+saved docs/img/24/inverse_parity.png

@@ -1,0 +1,27 @@
+Cox = 6.9063e-08 F/cm^2, q/Cox = 2.3199 V per 1e12 cm^-2
+
+   T  Q (cm-2)  Vfb sim Vfb hand  Vth sim Vth hand psiB sim
+ 300    +0e+00   -2.646   -2.643   +4.261   +4.289  -1.4327
+ 300    +1e+12   -4.964   -4.963   +1.943   +1.969  -1.4327
+ 300    -1e+12   -0.326   -0.323   +6.594   +6.609  -1.4327
+ 423    +0e+00   -2.559   -2.555   +4.136   +4.136  -1.3626
+ 423    +1e+12   -4.880   -4.875   +1.814   +1.816  -1.3626
+ 423    -1e+12   -0.236   -0.235   +6.447   +6.455  -1.3626
+
+flat-band shift by the interface charge:
+  300 K, Q = +1e+12: dVfb sim = -2.3180 V, -qQ/Cox = -2.3199 V
+  300 K, Q = -1e+12: dVfb sim = +2.3193 V, -qQ/Cox = +2.3199 V
+  423 K, Q = +1e+12: dVfb sim = -2.3214 V, -qQ/Cox = -2.3199 V
+  423 K, Q = -1e+12: dVfb sim = +2.3223 V, -qQ/Cox = +2.3199 V
+
+full drift-diffusion vs equilibrium Poisson, VG -10..+1 V: max |psi_s difference| = 1.6e-15 V
+
+C/Cox near flat band, 300 K, Q = 0 (incomplete ionization on / off):
+  VG = -4.00 V: 0.9614 / 0.9679
+  VG = -3.50 V: 0.9413 / 0.9563
+  VG = -3.00 V: 0.8970 / 0.9351
+  VG = -2.75 V: 0.8697 / 0.9177
+  VG = -2.50 V: 0.8547 / 0.8934
+  VG = -2.25 V: 0.8455 / 0.8611
+  VG = -2.00 V: 0.8246 / 0.8226
+saved docs/img/12/moscap_cv.png

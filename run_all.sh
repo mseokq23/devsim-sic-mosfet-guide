@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Run every step in order and keep the output in logs/NN_name.log (about 45 min on 2 cores).
+# Run every step in order and keep the output in logs/NN_name.log (about 40 min on 2 cores).
 # Steps 22 and 23 skip runs that already have a JSON in results/; delete results/oat, results/doe to redo them.
 set -euo pipefail
 cd "$(dirname "$0")"

@@ -1,0 +1,52 @@
+nodes = 101, Vt = 0.02585 V, ni = 1.518e-08 cm^-3, Potential(n-type) = 1.4178 V
+number of equations 202
+Iteration: 0
+  Device: "bar"	RelError: 0.00000e+00	AbsError: 0.00000e+00
+    Region: "sic"	RelError: 0.00000e+00	AbsError: 0.00000e+00
+      Equation: "ElectronContinuityEquation"	RelError: 0.00000e+00	AbsError: 0.00000e+00
+      Equation: "PotentialEquation"	RelError: 0.00000e+00	AbsError: 0.00000e+00
+
+--- Newton iterations, right contact 0 -> 0.1 V ---
+number of equations 202
+Iteration: 0
+  Device: "bar"	RelError: 2.80739e-02	AbsError: 3.01666e+00
+    Region: "sic"	RelError: 2.80739e-02	AbsError: 3.01666e+00
+      Equation: "ElectronContinuityEquation"	RelError: 2.97571e-16	AbsError: 2.97571e+00
+      Equation: "PotentialEquation"	RelError: 2.80739e-02	AbsError: 4.09542e-02
+Iteration: 1
+  Device: "bar"	RelError: 2.06525e-02	AbsError: 2.40199e+00
+    Region: "sic"	RelError: 2.06525e-02	AbsError: 2.40199e+00
+      Equation: "ElectronContinuityEquation"	RelError: 2.37122e-16	AbsError: 2.37122e+00
+      Equation: "PotentialEquation"	RelError: 2.06525e-02	AbsError: 3.07632e-02
+Iteration: 2
+  Device: "bar"	RelError: 1.68989e-02	AbsError: 2.12154e+00
+    Region: "sic"	RelError: 1.68989e-02	AbsError: 2.12154e+00
+      Equation: "ElectronContinuityEquation"	RelError: 2.09597e-16	AbsError: 2.09597e+00
+      Equation: "PotentialEquation"	RelError: 1.68989e-02	AbsError: 2.55655e-02
+Iteration: 3
+  Device: "bar"	RelError: 6.03838e-03	AbsError: 1.02156e-01
+    Region: "sic"	RelError: 6.03838e-03	AbsError: 1.02156e-01
+      Equation: "ElectronContinuityEquation"	RelError: 9.29909e-18	AbsError: 9.29909e-02
+      Equation: "PotentialEquation"	RelError: 6.03838e-03	AbsError: 9.16533e-03
+Iteration: 4
+  Device: "bar"	RelError: 7.89162e-17	AbsError: 7.51259e-03
+    Region: "sic"	RelError: 7.89162e-17	AbsError: 7.51259e-03
+      Equation: "ElectronContinuityEquation"	RelError: 7.51259e-19	AbsError: 7.51259e-03
+      Equation: "PotentialEquation"	RelError: 7.81649e-17	AbsError: 1.15605e-16
+--- end ---
+
+ V (V)  J DEVSIM (A/cm2)   J = qNDmuV/L  rel diff
+   0.0      0.000000e+00   0.000000e+00   0.0e+00
+   0.1      1.441959e+02   1.441959e+02   8.3e-14
+   0.2      2.883918e+02   2.883918e+02   2.9e-14
+   0.3      4.325877e+02   4.325877e+02   8.3e-15
+   0.4      5.767836e+02   5.767836e+02   2.7e-14
+   0.5      7.209795e+02   7.209795e+02   6.5e-15
+   0.6      8.651754e+02   8.651754e+02   8.3e-15
+   0.7      1.009371e+03   1.009371e+03   1.9e-14
+   0.8      1.153567e+03   1.153567e+03   2.7e-14
+   0.9      1.297763e+03   1.297763e+03   1.6e-14
+   1.0      1.441959e+03   1.441959e+03   6.5e-15
+
+specific resistance from the slope: 0.6935 mOhm cm^2 (rho*L = L/(q ND mu) = 0.6935)
+saved docs/img/05/resistor_iv.png

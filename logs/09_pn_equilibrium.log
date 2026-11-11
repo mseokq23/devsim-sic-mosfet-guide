@@ -1,0 +1,19 @@
+nodes = 438, smallest spacing = 0.8 nm (at the junction)
+step 1, Poisson only   : Potential(left) = -1.4642 V, Potential(right) = +1.4175 V
+Warning: Replacing equation with equation of the same name.
+Region: sic, Equation: PotentialEquation, Variable: Potential
+Replacing Node Model anode_phi in region sic of material SiC
+Replacing Node Model anode_phi:Potential in region sic of material SiC
+Warning: Replacing Contact Equation with Contact Equation of the same name.
+Contact: anode, Equation: PotentialEquation
+Replacing Node Model cathode_phi in region sic of material SiC
+Replacing Node Model cathode_phi:Potential in region sic of material SiC
+Warning: Replacing Contact Equation with Contact Equation of the same name.
+Contact: cathode, Equation: PotentialEquation
+step 2, drift-diffusion: Potential(left) = -1.4642 V, Potential(right) = +1.4175 V
+max |Potential(DD) - Potential(Poisson only)| = 0.00e+00 V
+built-in potential = 2.8817 V
+p-side (x = 0.5 um): p = 6.015e+16, n = 3.830e-33 cm^-3
+n-side (x = 8.0 um): n = 9.852e+15, p = 2.338e-32 cm^-3
+time 0.2 s, solves 3
+saved docs/img/09/pn_equilibrium.png

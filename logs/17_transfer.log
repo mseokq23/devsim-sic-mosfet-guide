@@ -1,0 +1,24 @@
+61 points, 64 solves (0 failed), 30.9 s
+current balance |ID + IS| max = 1.3e-12 A/cm  (numerical floor of the current)
+ VGS (V)   ID (A/cm)  JD (A/cm2)
+    0.00   8.026e-14   2.293e-10
+    2.00   8.026e-14   2.293e-10
+    3.00   3.960e-11   1.132e-07
+    4.00   7.759e-04   2.217e+00
+    5.00   4.236e-03   1.210e+01
+    6.00   6.584e-03   1.881e+01
+    8.00   9.860e-03   2.817e+01
+   10.00   1.218e-02   3.479e+01
+   14.00   1.540e-02   4.399e+01
+   18.00   1.763e-02   5.037e+01
+   20.00   1.852e-02   5.292e+01
+half-cell width W = 3.50 um -> JD = ID / W
+electrons at the channel center (x = 2.05 um):
+  VGS =  0.0 V: surface 2.77e-17, 2 nm 1.01e-17, 5 nm 2.05e-18, 10 nm 1.46e-19 cm^-3
+  VGS =  2.0 V: surface 3.58e+01, 2 nm 8.21e+00, 5 nm 6.96e-01, 10 nm 1.10e-02 cm^-3
+  VGS =  4.0 V: surface 6.16e+17, 2 nm 9.29e+16, 5 nm 3.48e+15, 10 nm 1.43e+13 cm^-3
+  VGS =  6.0 V: surface 9.10e+18, 2 nm 1.02e+18, 5 nm 3.35e+16, 10 nm 1.21e+14 cm^-3
+  VGS = 10.0 V: surface 3.07e+19, 2 nm 2.38e+18, 5 nm 7.06e+16, 10 nm 2.49e+14 cm^-3
+  VGS = 18.0 V: surface 7.99e+19, 2 nm 4.01e+18, 5 nm 1.08e+17, 10 nm 3.78e+14 cm^-3
+saved docs/img/17/transfer.png
+saved docs/img/17/electrons_on.png

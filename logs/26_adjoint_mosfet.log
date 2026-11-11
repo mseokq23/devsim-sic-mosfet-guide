@@ -1,0 +1,34 @@
+VGS = 6 V, VDS = 0.1 V: ID = 6.5835130214e-03 A/cm (parameter drain), 6.5835130214e-03 A/cm (circuit drain)
+
+adjoint vs re-solve (central difference) at VDS = 0.1 V
+  VGS   ID (A/cm)    param        adjoint    re-solve FD rel. diff
+  3.5   1.135e-06      Qit   5.067678e-05   5.067694e-05   3.0e-06
+  3.5   1.135e-06     N_pw  -5.572686e-05  -5.572708e-05   3.9e-06
+  3.5   1.135e-06  mu_surf   5.371806e-08   5.371806e-08   3.7e-09
+  3.5   1.135e-06      VGS   2.184449e-05   2.184450e-05   5.6e-07
+  4.0   7.759e-04      Qit   9.242326e-03   9.242325e-03   1.4e-07
+  4.0   7.759e-04     N_pw  -1.051027e-02  -1.051027e-02   1.6e-07
+  4.0   7.759e-04  mu_surf   3.596206e-05   3.596206e-05   6.6e-09
+  4.0   7.759e-04      VGS   3.983953e-03   3.983953e-03   2.7e-08
+  6.0   6.584e-03      Qit   4.699005e-03   4.699005e-03   1.1e-09
+  6.0   6.584e-03     N_pw  -6.668780e-03  -6.668780e-03   4.5e-09
+  6.0   6.584e-03  mu_surf   2.422348e-04   2.422349e-04   7.0e-08
+  6.0   6.584e-03      VGS   2.025531e-03   2.025531e-03   9.7e-11
+ 10.0   1.218e-02      Qit   2.325770e-03   2.325770e-03   2.1e-10
+ 10.0   1.218e-02     N_pw  -4.422638e-03  -4.422638e-03   5.3e-09
+ 10.0   1.218e-02  mu_surf   3.495211e-04   3.495211e-04   1.7e-07
+ 10.0   1.218e-02      VGS   1.002536e-03   1.002536e-03   6.6e-10
+ 18.0   1.763e-02      Qit   1.108039e-03   1.108039e-03   1.3e-12
+ 18.0   1.763e-02     N_pw  -2.918668e-03  -2.918668e-03   6.1e-09
+ 18.0   1.763e-02  mu_surf   3.804318e-04   3.804319e-04   3.0e-07
+ 18.0   1.763e-02      VGS   4.776258e-04   4.776258e-04   1.0e-09
+time per bias point: adjoint 807 ms (4 parameters, 1 factorization), re-solve FD 3133 ms (8 Newton solves)
+units: Qit per 1e12 cm^-2 (A/cm per 1e12), N_pw per unit scale, mu_surf per cm2/Vs, VGS per V (= gm)
+
+along the transfer curve (VGS 3..20 V, ID > 1e-9 A/cm, 68 points), equivalent VGS shift = (dID/dtheta * dtheta) / (dID/dVGS):
+  |Qit,eff| +10 % : -0.2320 .. -0.2320 V
+  N_pw +10 %      : -0.6490 .. -0.2509 V
+  mu_surf +10 %   : +0.0046 .. +1.8122 V
+  (q/Cox * 1e11 cm^-2 = 0.2320 V)
+  -> a change of Qit,eff is exactly a shift of VGS at every bias; N_pw and mu_surf are not
+saved docs/img/26/adjoint_sensitivity.png

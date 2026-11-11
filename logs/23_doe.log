@@ -1,0 +1,45 @@
+configs/design_doe.csv: 16 Sobol points, discrepancy 0.0134 (random 16 points: 0.0548)
+
+$ python -m sicdev.runner configs/design_doe.csv --out results/doe --jobs 2
+32 runs to do, 0 already done, 2 parallel
+  D00_T300:  44.5 s, converged=True, Vth=2.880 V, Ron=1.898 mOhm cm2
+  D00_T423:  46.2 s, converged=True, Vth=2.642 V, Ron=2.787 mOhm cm2
+  D01_T300:  48.6 s, converged=True, Vth=4.249 V, Ron=2.056 mOhm cm2
+  D01_T423:  51.0 s, converged=True, Vth=4.020 V, Ron=2.919 mOhm cm2
+  D02_T300:  51.0 s, converged=True, Vth=4.004 V, Ron=1.954 mOhm cm2
+  D02_T423:  49.3 s, converged=True, Vth=3.762 V, Ron=2.918 mOhm cm2
+  D03_T300:  42.5 s, converged=True, Vth=3.835 V, Ron=2.064 mOhm cm2
+  D03_T423:  42.9 s, converged=True, Vth=3.611 V, Ron=2.852 mOhm cm2
+  D04_T300:  81.7 s, converged=True, Vth=5.325 V, Ron=2.296 mOhm cm2
+  D04_T423:  41.5 s, converged=True, Vth=5.083 V, Ron=2.996 mOhm cm2
+  D05_T300:  51.1 s, converged=True, Vth=2.648 V, Ron=1.903 mOhm cm2
+  D05_T423:  48.7 s, converged=True, Vth=2.427 V, Ron=2.912 mOhm cm2
+  D06_T300:  47.4 s, converged=True, Vth=3.786 V, Ron=2.126 mOhm cm2
+  D06_T423:  49.1 s, converged=True, Vth=3.553 V, Ron=3.006 mOhm cm2
+  D07_T300:  43.4 s, converged=True, Vth=3.218 V, Ron=1.911 mOhm cm2
+  D07_T423:  45.0 s, converged=True, Vth=2.985 V, Ron=2.764 mOhm cm2
+  D08_T300:  44.9 s, converged=True, Vth=4.203 V, Ron=1.927 mOhm cm2
+  D08_T423:  42.4 s, converged=True, Vth=3.962 V, Ron=2.801 mOhm cm2
+  D09_T300:  46.2 s, converged=True, Vth=3.105 V, Ron=2.116 mOhm cm2
+  D09_T423:  48.2 s, converged=True, Vth=2.881 V, Ron=2.973 mOhm cm2
+  D10_T300:  51.8 s, converged=True, Vth=4.944 V, Ron=2.134 mOhm cm2
+  D10_T423:  47.4 s, converged=True, Vth=4.706 V, Ron=3.062 mOhm cm2
+  D11_T300:  40.9 s, converged=True, Vth=2.818 V, Ron=1.942 mOhm cm2
+  D11_T423:  42.8 s, converged=True, Vth=2.588 V, Ron=2.762 mOhm cm2
+  D12_T300:  45.5 s, converged=True, Vth=3.656 V, Ron=1.970 mOhm cm2
+  D12_T423:  46.3 s, converged=True, Vth=3.423 V, Ron=2.799 mOhm cm2
+  D13_T300:  46.8 s, converged=True, Vth=3.953 V, Ron=1.994 mOhm cm2
+  D13_T423:  49.3 s, converged=True, Vth=3.722 V, Ron=2.935 mOhm cm2
+  D14_T300:  91.5 s, converged=True, Vth=3.297 V, Ron=2.126 mOhm cm2
+  D14_T423:  44.3 s, converged=True, Vth=3.053 V, Ron=2.974 mOhm cm2
+  D15_T300:  45.1 s, converged=True, Vth=4.108 V, Ron=1.844 mOhm cm2
+  D15_T423:  43.6 s, converged=True, Vth=3.887 V, Ron=2.750 mOhm cm2
+done in 784 s, 32 runs in results/doe/runs.csv
+
+$ python -m sicdev.runner configs/design_doe.csv --out results/doe --jobs 2   (again)
+0 runs to do, 32 already done, 2 parallel
+done in 0 s, 32 runs in results/doe/runs.csv
+
+runs.csv: 32 rows, 32 columns, all converged: True
+runtime per run: median 46 s, max 91 s
+saved docs/img/23/doe_features.png

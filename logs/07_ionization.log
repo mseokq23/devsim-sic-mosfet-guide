@@ -1,0 +1,11 @@
+T = 300 K: n1D = Nc exp(-0.066/kT) = 1.316e+18 cm^-3, p1A = Nv exp(-0.191/kT) = 1.540e+16 cm^-3
+T = 423 K: n1D = Nc exp(-0.066/kT) = 4.628e+18 cm^-3, p1A = Nv exp(-0.191/kT) = 2.210e+17 cm^-3
+
+region           N (cm-3)  ionized 300 K  ionized 423 K
+drift (N)           1e+16          98.5%          99.6%
+JFET (N)            2e+16          97.1%          99.2%
+n+ source (N)       2e+19          16.6%          28.7%
+substrate (N)       1e+19          22.6%          37.9%
+P-well (Al)         1e+17          17.8%          51.7%
+p+ body (Al)        1e+19           1.9%           7.2%
+saved docs/img/07/ionization.png

@@ -1,0 +1,9 @@
+x mesh lines (position um: spacing um): 0: 0.1, 0.5: 0.03, 1.4: 0.02, 1.5: 0.02, 1.8: 0.008, 2.05: 0.025, 2.3: 0.008, 2.7: 0.05, 3.5: 0.08
+y mesh lines (position um: spacing um): -0.051: 0.001, -0.05: 0.00833333, 0: 0.0008, 0.01: 0.002, 0.05: 0.008, 0.25: 0.015, 0.3: 0.02, 0.7: 0.015, 1: 0.04, 2.5: 0.25, 10: 0.05, 11: 0.25, 11.001: 0.001
+mesh_scale 2.0: 6269 nodes (SiC + oxide), 11388 triangles in SiC
+mesh_scale 1.5: 10964 nodes (SiC + oxide), 20160 triangles in SiC
+mesh_scale 1.0: 23633 nodes (SiC + oxide), 43646 triangles in SiC
+regions : ('gas_bot', 'gas_gate', 'gas_top', 'oxide', 'sic')
+contacts: ('drain', 'gate', 'source')
+interface: ('ox_sic',)
+saved docs/img/14/mesh.png

@@ -1,0 +1,28 @@
+  coarse          49.5 s, converged=True, Vth=3.763 V, Ron=2.017 mOhm cm2
+  medium          50.6 s, converged=True, Vth=3.765 V, Ron=2.000 mOhm cm2
+  fine           124.6 s, converged=True, Vth=3.765 V, Ron=1.983 mOhm cm2
+  medium_128bit  122.7 s, converged=True, Vth=3.765 V, Ron=nan mOhm cm2
+all cases 174 s (2 in parallel)
+
+                       coarse     medium       fine  medium-fine   limit  ok
+nodes                    6269      10964      23633
+runtime (s)              49.2       50.3      124.2
+solves                    101         92         92
+failed steps               11          0          0
+output up to (V)        3.312          5          5
+Vth (V)                3.7631     3.7646     3.7646     +0.03 mV   20 mV yes
+SS (mV/dec)            112.61     112.47     112.35      +0.11 %     5 % yes
+gm,max (S/cm)       0.0037427  0.0038616  0.0039671      -2.66 %     3 % yes
+Ion (A/cm)           0.017488   0.017628    0.01778      -0.85 %     2 % yes
+Ron,sp (mOhm cm2)      2.0168     2.0003      1.983      +0.87 %     2 % yes
+
+double vs 128-bit (medium mesh, transfer curve only):
+  Vth (V)          double 3.764588285  128-bit 3.764588285  diff +8.9e-12
+  SS (mV/dec)      double 112.4725576  128-bit 112.4909544  diff -1.8e-02
+  gm,max (S/cm)    double 0.003861643755  128-bit 0.003861643755  diff +5.2e-14
+  Ion (A/cm)       double 0.01762818389  128-bit 0.01762818389  diff -6.1e-15
+  numerical floor max|ID + IS|: double 1.3e-12 A/cm, 128-bit 3.9e-26 A/cm
+  runtime: double 50 s for 92 solves (transfer + output), 128-bit 122 s for 74 solves (transfer only) -> 3.0x per solve
+
+repeat: medium run vs results/base_T300.json (step 19, another process): bit-for-bit identical
+saved docs/img/20/mesh_precision.png

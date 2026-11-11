@@ -1,0 +1,52 @@
+configs/design_oat.csv: 17 designs x 2 temperatures
+34 runs to do, 0 already done, 2 parallel
+  A_base_T300:  50.6 s, converged=True, Vth=3.765 V, Ron=2.000 mOhm cm2
+  A_base_T423:  53.4 s, converged=True, Vth=3.530 V, Ron=2.871 mOhm cm2
+  A_wjfet_-20pct_T300:  53.4 s, converged=True, Vth=3.765 V, Ron=2.090 mOhm cm2
+  A_wjfet_-20pct_T423:  54.7 s, converged=True, Vth=3.530 V, Ron=3.057 mOhm cm2
+  A_wjfet_-10pct_T300:  51.4 s, converged=True, Vth=3.765 V, Ron=2.040 mOhm cm2
+  A_wjfet_-10pct_T423:  53.4 s, converged=True, Vth=3.530 V, Ron=2.953 mOhm cm2
+  A_wjfet_+10pct_T300:  44.7 s, converged=True, Vth=3.765 V, Ron=1.967 mOhm cm2
+  A_wjfet_+10pct_T423:  48.8 s, converged=True, Vth=3.530 V, Ron=2.804 mOhm cm2
+  A_wjfet_+20pct_T300:  41.5 s, converged=True, Vth=3.765 V, Ron=1.939 mOhm cm2
+  A_wjfet_+20pct_T423:  45.5 s, converged=True, Vth=3.530 V, Ron=2.747 mOhm cm2
+  A_npwell_-20pct_T300:  46.5 s, converged=True, Vth=3.204 V, Ron=1.925 mOhm cm2
+  A_npwell_-20pct_T423:  46.4 s, converged=True, Vth=2.984 V, Ron=2.810 mOhm cm2
+  A_npwell_-10pct_T300:  46.6 s, converged=True, Vth=3.496 V, Ron=1.965 mOhm cm2
+  A_npwell_-10pct_T423:  48.4 s, converged=True, Vth=3.268 V, Ron=2.842 mOhm cm2
+  A_npwell_+10pct_T300:  49.4 s, converged=True, Vth=4.015 V, Ron=2.033 mOhm cm2
+  A_npwell_+10pct_T423:  45.7 s, converged=True, Vth=3.775 V, Ron=2.897 mOhm cm2
+  A_npwell_+20pct_T300:  82.5 s, converged=True, Vth=4.250 V, Ron=2.063 mOhm cm2
+  A_npwell_+20pct_T423:  47.5 s, converged=True, Vth=4.005 V, Ron=2.921 mOhm cm2
+  A_qit_-20pct_T300:  46.6 s, converged=True, Vth=3.300 V, Ron=1.975 mOhm cm2
+  A_qit_-20pct_T423:  48.7 s, converged=True, Vth=3.066 V, Ron=2.853 mOhm cm2
+  A_qit_-10pct_T300:  46.6 s, converged=True, Vth=3.532 V, Ron=1.988 mOhm cm2
+  A_qit_-10pct_T423:  49.9 s, converged=True, Vth=3.298 V, Ron=2.862 mOhm cm2
+  A_qit_+10pct_T300:  46.8 s, converged=True, Vth=3.997 V, Ron=2.013 mOhm cm2
+  A_qit_+10pct_T423:  50.7 s, converged=True, Vth=3.762 V, Ron=2.880 mOhm cm2
+  A_qit_+20pct_T300:  48.6 s, converged=True, Vth=4.229 V, Ron=2.027 mOhm cm2
+  A_qit_+20pct_T423:  50.8 s, converged=True, Vth=3.994 V, Ron=2.890 mOhm cm2
+  A_mu_-20pct_T300:  55.7 s, converged=True, Vth=3.781 V, Ron=2.217 mOhm cm2
+  A_mu_-20pct_T423:  49.2 s, converged=True, Vth=3.548 V, Ron=3.016 mOhm cm2
+  A_mu_-10pct_T300:  50.7 s, converged=True, Vth=3.772 V, Ron=2.097 mOhm cm2
+  A_mu_-10pct_T423:  50.0 s, converged=True, Vth=3.538 V, Ron=2.936 mOhm cm2
+  A_mu_+10pct_T300:  47.7 s, converged=True, Vth=3.758 V, Ron=1.921 mOhm cm2
+  A_mu_+10pct_T423:  49.1 s, converged=True, Vth=3.523 V, Ron=2.817 mOhm cm2
+  A_mu_+20pct_T300:  47.4 s, converged=True, Vth=3.752 V, Ron=1.854 mOhm cm2
+  A_mu_+20pct_T423:  48.6 s, converged=True, Vth=3.517 V, Ron=2.771 mOhm cm2
+done in 864 s, 34 runs in results/oat/runs.csv
+
+300 K, change of each feature when one parameter goes +20 % (in brackets: -20 %)
+                           Vth                  SS              gm,max                 Ion              Ron,sp             ID(2 V)
+W_JFET       -0.000 (+0.000) V       -0.0 (+0.0) %       +0.6 (-0.8) %       +3.1 (-4.2) %       -3.1 (+4.5) %       +3.3 (-4.4) %
+N_pw         +0.485 (-0.560) V       +3.4 (-3.7) %       -4.7 (+4.2) %       -3.0 (+3.8) %       +3.1 (-3.8) %       -3.4 (+4.4) %
+|Qit,eff|    +0.464 (-0.465) V       +0.0 (+0.0) %       -1.2 (+0.8) %       -1.3 (+1.2) %       +1.3 (-1.2) %       -1.4 (+1.4) %
+mu_surf      -0.013 (+0.016) V       -0.2 (+0.2) %     +16.2 (-17.2) %       +7.8 (-9.7) %      -7.3 (+10.8) %      +8.3 (-10.2) %
+
+423 K, change of each feature when one parameter goes +20 % (in brackets: -20 %)
+                           Vth                  SS              gm,max                 Ion              Ron,sp             ID(2 V)
+W_JFET       -0.000 (+0.000) V       +0.0 (-0.0) %       +1.2 (-1.7) %       +4.5 (-6.0) %       -4.3 (+6.5) %       +4.7 (-6.4) %
+N_pw         +0.474 (-0.547) V       +3.8 (-4.1) %       -5.1 (+5.6) %       -1.7 (+2.1) %       +1.7 (-2.1) %       -1.9 (+2.4) %
+|Qit,eff|    +0.464 (-0.464) V       -0.0 (-0.0) %       -0.6 (-0.2) %       -0.6 (+0.6) %       +0.7 (-0.6) %       -0.7 (+0.7) %
+mu_surf      -0.013 (+0.017) V       -0.1 (+0.2) %     +11.8 (-13.6) %       +3.6 (-4.8) %       -3.5 (+5.1) %       +3.8 (-5.0) %
+saved docs/img/22/one_at_a_time.png

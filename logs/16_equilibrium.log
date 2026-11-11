@@ -1,0 +1,442 @@
+--- equilibrium: Poisson only, then electron drift-diffusion (Newton log) ---
+Creating Region gas_top
+Creating Region sic
+Creating Region gas_bot
+Creating Region gas_gate
+Creating Region oxide
+Contact: source region sic ni: 0 ci: 11 (0, 0, 0)
+Contact: drain region sic ni: 210 ci: 116 (0, 0.0011, 0)
+Contact: source region sic ni: 2 ci: 129 (1.5e-05, 0, 0)
+Contact: drain region sic ni: 211 ci: 234 (1.5e-05, 0.0011, 0)
+Contact: source region sic ni: 212 ci: 247 (2.65385e-05, 0, 0)
+Contact: drain region sic ni: 317 ci: 352 (2.65385e-05, 0.0011, 0)
+Contact: source region sic ni: 318 ci: 365 (3.54142e-05, 0, 0)
+Contact: drain region sic ni: 423 ci: 470 (3.54142e-05, 0.0011, 0)
+Contact: source region sic ni: 424 ci: 483 (4.22417e-05, 0, 0)
+Contact: drain region sic ni: 529 ci: 588 (4.22417e-05, 0.0011, 0)
+Contact: source region sic ni: 530 ci: 601 (4.74936e-05, 0, 0)
+Contact: drain region sic ni: 635 ci: 706 (4.74936e-05, 0.0011, 0)
+Contact: source region sic ni: 636 ci: 719 (5e-05, 0, 0)
+Contact: drain region sic ni: 741 ci: 824 (5e-05, 0.0011, 0)
+Contact: source region sic ni: 742 ci: 837 (5.45e-05, 0, 0)
+Contact: drain region sic ni: 847 ci: 942 (5.45e-05, 0.0011, 0)
+Contact: source region sic ni: 848 ci: 955 (5.89224e-05, 0, 0)
+Contact: drain region sic ni: 953 ci: 1060 (5.89224e-05, 0.0011, 0)
+Contact: source region sic ni: 954 ci: 1073 (6.32686e-05, 0, 0)
+Contact: drain region sic ni: 1059 ci: 1178 (6.32686e-05, 0.0011, 0)
+Contact: source region sic ni: 1060 ci: 1191 (6.75398e-05, 0, 0)
+Contact: drain region sic ni: 1165 ci: 1296 (6.75398e-05, 0.0011, 0)
+Contact: source region sic ni: 1166 ci: 1309 (7.17374e-05, 0, 0)
+Contact: drain region sic ni: 1271 ci: 1414 (7.17374e-05, 0.0011, 0)
+Contact: source region sic ni: 1272 ci: 1427 (7.58626e-05, 0, 0)
+Contact: drain region sic ni: 1377 ci: 1532 (7.58626e-05, 0.0011, 0)
+Contact: source region sic ni: 1378 ci: 1545 (7.99167e-05, 0, 0)
+Contact: drain region sic ni: 1483 ci: 1650 (7.99167e-05, 0.0011, 0)
+Contact: source region sic ni: 1484 ci: 1663 (8.39009e-05, 0, 0)
+Contact: drain region sic ni: 1589 ci: 1768 (8.39009e-05, 0.0011, 0)
+Contact: source region sic ni: 1590 ci: 1781 (8.78164e-05, 0, 0)
+Contact: drain region sic ni: 1695 ci: 1886 (8.78164e-05, 0.0011, 0)
+Contact: source region sic ni: 1696 ci: 1899 (9.16644e-05, 0, 0)
+Contact: drain region sic ni: 1801 ci: 2004 (9.16644e-05, 0.0011, 0)
+Contact: source region sic ni: 1802 ci: 2017 (9.5446e-05, 0, 0)
+Contact: drain region sic ni: 1907 ci: 2122 (9.5446e-05, 0.0011, 0)
+Contact: source region sic ni: 1908 ci: 2135 (9.91625e-05, 0, 0)
+Contact: drain region sic ni: 2013 ci: 2240 (9.91625e-05, 0.0011, 0)
+Contact: source region sic ni: 2014 ci: 2253 (0.000102815, 0, 0)
+Contact: drain region sic ni: 2119 ci: 2358 (0.000102815, 0.0011, 0)
+Contact: source region sic ni: 2120 ci: 2371 (0.000106404, 0, 0)
+Contact: drain region sic ni: 2225 ci: 2476 (0.000106404, 0.0011, 0)
+Contact: source region sic ni: 2226 ci: 2489 (0.000109932, 0, 0)
+Contact: drain region sic ni: 2331 ci: 2594 (0.000109932, 0.0011, 0)
+Contact: source region sic ni: 2332 ci: 2607 (0.000113398, 0, 0)
+Contact: drain region sic ni: 2437 ci: 2712 (0.000113398, 0.0011, 0)
+Contact: source region sic ni: 2438 ci: 2725 (0.000116805, 0, 0)
+Contact: drain region sic ni: 2543 ci: 2830 (0.000116805, 0.0011, 0)
+Contact: source region sic ni: 2544 ci: 2843 (0.000120154, 0, 0)
+Contact: drain region sic ni: 2649 ci: 2948 (0.000120154, 0.0011, 0)
+Contact: source region sic ni: 2650 ci: 2961 (0.000123444, 0, 0)
+Contact: drain region sic ni: 2755 ci: 3066 (0.000123444, 0.0011, 0)
+Contact: source region sic ni: 2756 ci: 3079 (0.000126678, 0, 0)
+Contact: drain region sic ni: 2861 ci: 3184 (0.000126678, 0.0011, 0)
+Contact: source region sic ni: 2862 ci: 3197 (0.000129856, 0, 0)
+Contact: drain region sic ni: 2967 ci: 3302 (0.000129856, 0.0011, 0)
+Contact: source region sic ni: 2968 ci: 3315 (0.000132979, 0, 0)
+Contact: drain region sic ni: 3073 ci: 3420 (0.000132979, 0.0011, 0)
+Contact: source region sic ni: 3074 ci: 3433 (0.000136048, 0, 0)
+Contact: drain region sic ni: 3179 ci: 3538 (0.000136048, 0.0011, 0)
+Contact: source region sic ni: 3180 ci: 3551 (0.000139065, 0, 0)
+Contact: drain region sic ni: 3285 ci: 3656 (0.000139065, 0.0011, 0)
+Contact: source region sic ni: 3286 ci: 3669 (0.00014, 0, 0)
+Contact: drain region sic ni: 3391 ci: 3774 (0.00014, 0.0011, 0)
+Contact: drain region sic ni: 3497 ci: 3892 (0.000143, 0.0011, 0)
+Contact: drain region sic ni: 3603 ci: 4010 (0.000146, 0.0011, 0)
+Contact: drain region sic ni: 3709 ci: 4128 (0.000149, 0.0011, 0)
+Contact: gate region oxide ni: 0 ci: 4131 (0.00015, -5e-06, 0)
+Contact: drain region sic ni: 3815 ci: 4246 (0.00015, 0.0011, 0)
+Contact: gate region oxide ni: 2 ci: 4249 (0.000153, -5e-06, 0)
+Contact: drain region sic ni: 3921 ci: 4364 (0.000153, 0.0011, 0)
+Contact: gate region oxide ni: 22 ci: 4367 (0.000155812, -5e-06, 0)
+Contact: drain region sic ni: 4027 ci: 4482 (0.000155812, 0.0011, 0)
+Contact: gate region oxide ni: 33 ci: 4485 (0.000158449, -5e-06, 0)
+Contact: drain region sic ni: 4133 ci: 4600 (0.000158449, 0.0011, 0)
+Contact: gate region oxide ni: 44 ci: 4603 (0.000160921, -5e-06, 0)
+Contact: drain region sic ni: 4239 ci: 4718 (0.000160921, 0.0011, 0)
+Contact: gate region oxide ni: 55 ci: 4721 (0.000163239, -5e-06, 0)
+Contact: drain region sic ni: 4345 ci: 4836 (0.000163239, 0.0011, 0)
+Contact: gate region oxide ni: 66 ci: 4839 (0.000165411, -5e-06, 0)
+Contact: drain region sic ni: 4451 ci: 4954 (0.000165411, 0.0011, 0)
+Contact: gate region oxide ni: 77 ci: 4957 (0.000167448, -5e-06, 0)
+Contact: drain region sic ni: 4557 ci: 5072 (0.000167448, 0.0011, 0)
+Contact: gate region oxide ni: 88 ci: 5075 (0.000169357, -5e-06, 0)
+Contact: drain region sic ni: 4663 ci: 5190 (0.000169357, 0.0011, 0)
+Contact: gate region oxide ni: 99 ci: 5193 (0.000171148, -5e-06, 0)
+Contact: drain region sic ni: 4769 ci: 5308 (0.000171148, 0.0011, 0)
+Contact: gate region oxide ni: 110 ci: 5311 (0.000172826, -5e-06, 0)
+Contact: drain region sic ni: 4875 ci: 5426 (0.000172826, 0.0011, 0)
+Contact: gate region oxide ni: 121 ci: 5429 (0.000174399, -5e-06, 0)
+Contact: drain region sic ni: 4981 ci: 5544 (0.000174399, 0.0011, 0)
+Contact: gate region oxide ni: 132 ci: 5547 (0.000175874, -5e-06, 0)
+Contact: drain region sic ni: 5087 ci: 5662 (0.000175874, 0.0011, 0)
+Contact: gate region oxide ni: 143 ci: 5665 (0.000177257, -5e-06, 0)
+Contact: drain region sic ni: 5193 ci: 5780 (0.000177257, 0.0011, 0)
+Contact: gate region oxide ni: 154 ci: 5783 (0.000178554, -5e-06, 0)
+Contact: drain region sic ni: 5299 ci: 5898 (0.000178554, 0.0011, 0)
+Contact: gate region oxide ni: 165 ci: 5901 (0.000179769, -5e-06, 0)
+Contact: drain region sic ni: 5405 ci: 6016 (0.000179769, 0.0011, 0)
+Contact: gate region oxide ni: 176 ci: 6019 (0.00018, -5e-06, 0)
+Contact: drain region sic ni: 5511 ci: 6134 (0.00018, 0.0011, 0)
+Contact: gate region oxide ni: 187 ci: 6137 (0.0001812, -5e-06, 0)
+Contact: drain region sic ni: 5617 ci: 6252 (0.0001812, 0.0011, 0)
+Contact: gate region oxide ni: 198 ci: 6255 (0.000182544, -5e-06, 0)
+Contact: drain region sic ni: 5723 ci: 6370 (0.000182544, 0.0011, 0)
+Contact: gate region oxide ni: 209 ci: 6373 (0.000184049, -5e-06, 0)
+Contact: drain region sic ni: 5829 ci: 6488 (0.000184049, 0.0011, 0)
+Contact: gate region oxide ni: 220 ci: 6491 (0.000185735, -5e-06, 0)
+Contact: drain region sic ni: 5935 ci: 6606 (0.000185735, 0.0011, 0)
+Contact: gate region oxide ni: 231 ci: 6609 (0.000187623, -5e-06, 0)
+Contact: drain region sic ni: 6041 ci: 6724 (0.000187623, 0.0011, 0)
+Contact: gate region oxide ni: 242 ci: 6727 (0.000189738, -5e-06, 0)
+Contact: drain region sic ni: 6147 ci: 6842 (0.000189738, 0.0011, 0)
+Contact: gate region oxide ni: 253 ci: 6845 (0.000192107, -5e-06, 0)
+Contact: drain region sic ni: 6253 ci: 6960 (0.000192107, 0.0011, 0)
+Contact: gate region oxide ni: 264 ci: 6963 (0.00019476, -5e-06, 0)
+Contact: drain region sic ni: 6359 ci: 7078 (0.00019476, 0.0011, 0)
+Contact: gate region oxide ni: 275 ci: 7081 (0.000197731, -5e-06, 0)
+Contact: drain region sic ni: 6465 ci: 7196 (0.000197731, 0.0011, 0)
+Contact: gate region oxide ni: 286 ci: 7199 (0.000201058, -5e-06, 0)
+Contact: drain region sic ni: 6571 ci: 7314 (0.000201058, 0.0011, 0)
+Contact: gate region oxide ni: 297 ci: 7317 (0.000204785, -5e-06, 0)
+Contact: drain region sic ni: 6677 ci: 7432 (0.000204785, 0.0011, 0)
+Contact: gate region oxide ni: 308 ci: 7435 (0.000205, -5e-06, 0)
+Contact: drain region sic ni: 6783 ci: 7550 (0.000205, 0.0011, 0)
+Contact: gate region oxide ni: 319 ci: 7553 (0.00020875, -5e-06, 0)
+Contact: drain region sic ni: 6889 ci: 7668 (0.00020875, 0.0011, 0)
+Contact: gate region oxide ni: 330 ci: 7671 (0.000212098, -5e-06, 0)
+Contact: drain region sic ni: 6995 ci: 7786 (0.000212098, 0.0011, 0)
+Contact: gate region oxide ni: 341 ci: 7789 (0.000215088, -5e-06, 0)
+Contact: drain region sic ni: 7101 ci: 7904 (0.000215088, 0.0011, 0)
+Contact: gate region oxide ni: 352 ci: 7907 (0.000217757, -5e-06, 0)
+Contact: drain region sic ni: 7207 ci: 8022 (0.000217757, 0.0011, 0)
+Contact: gate region oxide ni: 363 ci: 8025 (0.00022014, -5e-06, 0)
+Contact: drain region sic ni: 7313 ci: 8140 (0.00022014, 0.0011, 0)
+Contact: gate region oxide ni: 374 ci: 8143 (0.000222268, -5e-06, 0)
+Contact: drain region sic ni: 7419 ci: 8258 (0.000222268, 0.0011, 0)
+Contact: gate region oxide ni: 385 ci: 8261 (0.000224168, -5e-06, 0)
+Contact: drain region sic ni: 7525 ci: 8376 (0.000224168, 0.0011, 0)
+Contact: gate region oxide ni: 396 ci: 8379 (0.000225864, -5e-06, 0)
+Contact: drain region sic ni: 7631 ci: 8494 (0.000225864, 0.0011, 0)
+Contact: gate region oxide ni: 407 ci: 8497 (0.000227379, -5e-06, 0)
+Contact: drain region sic ni: 7737 ci: 8612 (0.000227379, 0.0011, 0)
+Contact: gate region oxide ni: 418 ci: 8615 (0.000228731, -5e-06, 0)
+Contact: drain region sic ni: 7843 ci: 8730 (0.000228731, 0.0011, 0)
+Contact: gate region oxide ni: 429 ci: 8733 (0.000229938, -5e-06, 0)
+Contact: drain region sic ni: 7949 ci: 8848 (0.000229938, 0.0011, 0)
+Contact: gate region oxide ni: 440 ci: 8851 (0.00023, -5e-06, 0)
+Contact: drain region sic ni: 8055 ci: 8966 (0.00023, 0.0011, 0)
+Contact: gate region oxide ni: 451 ci: 8969 (0.0002312, -5e-06, 0)
+Contact: drain region sic ni: 8161 ci: 9084 (0.0002312, 0.0011, 0)
+Contact: gate region oxide ni: 462 ci: 9087 (0.000232633, -5e-06, 0)
+Contact: drain region sic ni: 8267 ci: 9202 (0.000232633, 0.0011, 0)
+Contact: gate region oxide ni: 473 ci: 9205 (0.000234343, -5e-06, 0)
+Contact: drain region sic ni: 8373 ci: 9320 (0.000234343, 0.0011, 0)
+Contact: gate region oxide ni: 484 ci: 9323 (0.000236385, -5e-06, 0)
+Contact: drain region sic ni: 8479 ci: 9438 (0.000236385, 0.0011, 0)
+Contact: gate region oxide ni: 495 ci: 9441 (0.000238822, -5e-06, 0)
+Contact: drain region sic ni: 8585 ci: 9556 (0.000238822, 0.0011, 0)
+Contact: gate region oxide ni: 506 ci: 9559 (0.000241733, -5e-06, 0)
+Contact: drain region sic ni: 8691 ci: 9674 (0.000241733, 0.0011, 0)
+Contact: gate region oxide ni: 517 ci: 9677 (0.000245207, -5e-06, 0)
+Contact: drain region sic ni: 8797 ci: 9792 (0.000245207, 0.0011, 0)
+Contact: gate region oxide ni: 528 ci: 9795 (0.000249355, -5e-06, 0)
+Contact: drain region sic ni: 8903 ci: 9910 (0.000249355, 0.0011, 0)
+Contact: gate region oxide ni: 539 ci: 9913 (0.000254307, -5e-06, 0)
+Contact: drain region sic ni: 9009 ci: 10028 (0.000254307, 0.0011, 0)
+Contact: gate region oxide ni: 550 ci: 10031 (0.000260218, -5e-06, 0)
+Contact: drain region sic ni: 9115 ci: 10146 (0.000260218, 0.0011, 0)
+Contact: gate region oxide ni: 561 ci: 10149 (0.000267276, -5e-06, 0)
+Contact: drain region sic ni: 9221 ci: 10264 (0.000267276, 0.0011, 0)
+Contact: gate region oxide ni: 572 ci: 10267 (0.00027, -5e-06, 0)
+Contact: drain region sic ni: 9327 ci: 10382 (0.00027, 0.0011, 0)
+Contact: gate region oxide ni: 583 ci: 10385 (0.0002775, -5e-06, 0)
+Contact: drain region sic ni: 9433 ci: 10500 (0.0002775, 0.0011, 0)
+Contact: gate region oxide ni: 594 ci: 10503 (0.000285496, -5e-06, 0)
+Contact: drain region sic ni: 9539 ci: 10618 (0.000285496, 0.0011, 0)
+Contact: gate region oxide ni: 605 ci: 10621 (0.000294022, -5e-06, 0)
+Contact: drain region sic ni: 9645 ci: 10736 (0.000294022, 0.0011, 0)
+Contact: gate region oxide ni: 616 ci: 10739 (0.000303111, -5e-06, 0)
+Contact: drain region sic ni: 9751 ci: 10854 (0.000303111, 0.0011, 0)
+Contact: gate region oxide ni: 627 ci: 10857 (0.000312803, -5e-06, 0)
+Contact: drain region sic ni: 9857 ci: 10972 (0.000312803, 0.0011, 0)
+Contact: gate region oxide ni: 638 ci: 10975 (0.000323135, -5e-06, 0)
+Contact: drain region sic ni: 9963 ci: 11090 (0.000323135, 0.0011, 0)
+Contact: gate region oxide ni: 649 ci: 11093 (0.000334152, -5e-06, 0)
+Contact: drain region sic ni: 10069 ci: 11208 (0.000334152, 0.0011, 0)
+Contact: gate region oxide ni: 660 ci: 11211 (0.000345897, -5e-06, 0)
+Contact: drain region sic ni: 10175 ci: 11326 (0.000345897, 0.0011, 0)
+Contact: gate region oxide ni: 671 ci: 11329 (0.00035, -5e-06, 0)
+Contact: drain region sic ni: 10281 ci: 11444 (0.00035, 0.0011, 0)
+Adding 194 nodes
+Adding 385 edges with 191 duplicates removed
+Adding 192 triangles  with 0 duplicate removed
+Adding 124 nodes
+Adding 245 edges with 121 duplicates removed
+Adding 122 triangles  with 0 duplicate removed
+Adding 432 nodes
+Adding 1201 edges with 1109 duplicates removed
+Adding 770 triangles  with 0 duplicate removed
+Adding 682 nodes
+Adding 1901 edges with 1759 duplicates removed
+Adding 1220 triangles  with 0 duplicate removed
+Adding 10282 nodes
+Adding 30441 edges with 30039 duplicates removed
+Adding 20160 triangles  with 0 duplicate removed
+Contact drain in region sic with 97 nodes
+Contact gate in region oxide with 62 nodes
+Contact source in region sic with 32 nodes
+Interface ox_sic oxide sic has 62 node pairs
+Adding interface ox_sic with 62, 62 nodes
+number of equations 10964
+Iteration: 0
+  Device: "m"	RelError: 1.08843e+00	AbsError: 1.56448e+00
+    Region: "oxide"	RelError: 1.00000e+00	AbsError: 1.56448e+00
+      Equation: "PotentialEquation"	RelError: 1.00000e+00	AbsError: 1.56448e+00
+    Region: "sic"	RelError: 8.84280e-02	AbsError: 1.07784e-01
+      Equation: "PotentialEquation"	RelError: 8.84280e-02	AbsError: 1.07784e-01
+Iteration: 1
+  Device: "m"	RelError: 2.09051e+01	AbsError: 4.86508e-01
+    Region: "oxide"	RelError: 2.08068e+01	AbsError: 4.86508e-01
+      Equation: "PotentialEquation"	RelError: 2.08068e+01	AbsError: 4.86508e-01
+    Region: "sic"	RelError: 9.83588e-02	AbsError: 1.11958e-01
+      Equation: "PotentialEquation"	RelError: 9.83588e-02	AbsError: 1.11958e-01
+Iteration: 2
+  Device: "m"	RelError: 5.96750e+01	AbsError: 6.07399e-01
+    Region: "oxide"	RelError: 5.95637e+01	AbsError: 6.07399e-01
+      Equation: "PotentialEquation"	RelError: 5.95637e+01	AbsError: 6.07399e-01
+    Region: "sic"	RelError: 1.11291e-01	AbsError: 1.13992e-01
+      Equation: "PotentialEquation"	RelError: 1.11291e-01	AbsError: 1.13992e-01
+Iteration: 3
+  Device: "m"	RelError: 1.63607e+01	AbsError: 2.87762e-01
+    Region: "oxide"	RelError: 1.62357e+01	AbsError: 2.87762e-01
+      Equation: "PotentialEquation"	RelError: 1.62357e+01	AbsError: 2.87762e-01
+    Region: "sic"	RelError: 1.25022e-01	AbsError: 1.13826e-01
+      Equation: "PotentialEquation"	RelError: 1.25022e-01	AbsError: 1.13826e-01
+Iteration: 4
+  Device: "m"	RelError: 1.18940e+01	AbsError: 1.18656e-01
+    Region: "oxide"	RelError: 1.17526e+01	AbsError: 1.18656e-01
+      Equation: "PotentialEquation"	RelError: 1.17526e+01	AbsError: 1.18656e-01
+    Region: "sic"	RelError: 1.41411e-01	AbsError: 1.12796e-01
+      Equation: "PotentialEquation"	RelError: 1.41411e-01	AbsError: 1.12796e-01
+Iteration: 5
+  Device: "m"	RelError: 3.16802e+00	AbsError: 1.11448e-01
+    Region: "oxide"	RelError: 3.00561e+00	AbsError: 4.73409e-02
+      Equation: "PotentialEquation"	RelError: 3.00561e+00	AbsError: 4.73409e-02
+    Region: "sic"	RelError: 1.62413e-01	AbsError: 1.11448e-01
+      Equation: "PotentialEquation"	RelError: 1.62413e-01	AbsError: 1.11448e-01
+Iteration: 6
+  Device: "m"	RelError: 1.14585e+02	AbsError: 1.09945e-01
+    Region: "oxide"	RelError: 1.14394e+02	AbsError: 1.74434e-02
+      Equation: "PotentialEquation"	RelError: 1.14394e+02	AbsError: 1.74434e-02
+    Region: "sic"	RelError: 1.90792e-01	AbsError: 1.09945e-01
+      Equation: "PotentialEquation"	RelError: 1.90792e-01	AbsError: 1.09945e-01
+Iteration: 7
+  Device: "m"	RelError: 3.33415e+00	AbsError: 1.08332e-01
+    Region: "oxide"	RelError: 3.10263e+00	AbsError: 4.61106e-03
+      Equation: "PotentialEquation"	RelError: 3.10263e+00	AbsError: 4.61106e-03
+    Region: "sic"	RelError: 2.31517e-01	AbsError: 1.08332e-01
+      Equation: "PotentialEquation"	RelError: 2.31517e-01	AbsError: 1.08332e-01
+Iteration: 8
+  Device: "m"	RelError: 1.29172e+00	AbsError: 1.06626e-01
+    Region: "oxide"	RelError: 9.96596e-01	AbsError: 7.46871e-04
+      Equation: "PotentialEquation"	RelError: 9.96596e-01	AbsError: 7.46871e-04
+    Region: "sic"	RelError: 2.95122e-01	AbsError: 1.06626e-01
+      Equation: "PotentialEquation"	RelError: 2.95122e-01	AbsError: 1.06626e-01
+Iteration: 9
+  Device: "m"	RelError: 4.92895e-01	AbsError: 1.04828e-01
+    Region: "oxide"	RelError: 8.41582e-02	AbsError: 6.29066e-05
+      Equation: "PotentialEquation"	RelError: 8.41582e-02	AbsError: 6.29066e-05
+    Region: "sic"	RelError: 4.08737e-01	AbsError: 1.04828e-01
+      Equation: "PotentialEquation"	RelError: 4.08737e-01	AbsError: 1.04828e-01
+Iteration: 10
+  Device: "m"	RelError: 6.72761e-01	AbsError: 1.02929e-01
+    Region: "oxide"	RelError: 2.38481e-03	AbsError: 1.88169e-06
+      Equation: "PotentialEquation"	RelError: 2.38481e-03	AbsError: 1.88169e-06
+    Region: "sic"	RelError: 6.70377e-01	AbsError: 1.02929e-01
+      Equation: "PotentialEquation"	RelError: 6.70377e-01	AbsError: 1.02929e-01
+Iteration: 11
+  Device: "m"	RelError: 1.91790e+00	AbsError: 1.00918e-01
+    Region: "oxide"	RelError: 6.30703e-05	AbsError: 5.42712e-08
+      Equation: "PotentialEquation"	RelError: 6.30703e-05	AbsError: 5.42712e-08
+    Region: "sic"	RelError: 1.91784e+00	AbsError: 1.00918e-01
+      Equation: "PotentialEquation"	RelError: 1.91784e+00	AbsError: 1.00918e-01
+Iteration: 12
+  Device: "m"	RelError: 4.22914e+01	AbsError: 9.87826e-02
+    Region: "oxide"	RelError: 1.22708e-06	AbsError: 1.22982e-09
+      Equation: "PotentialEquation"	RelError: 1.22708e-06	AbsError: 1.22982e-09
+    Region: "sic"	RelError: 4.22914e+01	AbsError: 9.87826e-02
+      Equation: "PotentialEquation"	RelError: 4.22914e+01	AbsError: 9.87826e-02
+Iteration: 13
+  Device: "m"	RelError: 1.59408e+04	AbsError: 9.65063e-02
+    Region: "oxide"	RelError: 1.49912e-08	AbsError: 1.59720e-11
+      Equation: "PotentialEquation"	RelError: 1.49912e-08	AbsError: 1.59720e-11
+    Region: "sic"	RelError: 1.59408e+04	AbsError: 9.65063e-02
+      Equation: "PotentialEquation"	RelError: 1.59408e+04	AbsError: 9.65063e-02
+Iteration: 14
+  Device: "m"	RelError: 3.18732e+02	AbsError: 9.40708e-02
+    Region: "oxide"	RelError: 3.20289e-10	AbsError: 3.72868e-13
+      Equation: "PotentialEquation"	RelError: 3.20289e-10	AbsError: 3.72868e-13
+    Region: "sic"	RelError: 3.18732e+02	AbsError: 9.40708e-02
+      Equation: "PotentialEquation"	RelError: 3.18732e+02	AbsError: 9.40708e-02
+Iteration: 15
+  Device: "m"	RelError: 9.06829e+01	AbsError: 9.14537e-02
+    Region: "oxide"	RelError: 8.69206e-12	AbsError: 2.20934e-14
+      Equation: "PotentialEquation"	RelError: 8.69206e-12	AbsError: 2.20934e-14
+    Region: "sic"	RelError: 9.06829e+01	AbsError: 9.14537e-02
+      Equation: "PotentialEquation"	RelError: 9.06829e+01	AbsError: 9.14537e-02
+Iteration: 16
+  Device: "m"	RelError: 7.98034e+01	AbsError: 8.86277e-02
+    Region: "oxide"	RelError: 2.19817e-12	AbsError: 1.75415e-14
+      Equation: "PotentialEquation"	RelError: 2.19817e-12	AbsError: 1.75415e-14
+    Region: "sic"	RelError: 7.98034e+01	AbsError: 8.86277e-02
+      Equation: "PotentialEquation"	RelError: 7.98034e+01	AbsError: 8.86277e-02
+Iteration: 17
+  Device: "m"	RelError: 2.46220e+02	AbsError: 8.55593e-02
+    Region: "oxide"	RelError: 1.93511e-12	AbsError: 1.59872e-14
+      Equation: "PotentialEquation"	RelError: 1.93511e-12	AbsError: 1.59872e-14
+    Region: "sic"	RelError: 2.46220e+02	AbsError: 8.55593e-02
+      Equation: "PotentialEquation"	RelError: 2.46220e+02	AbsError: 8.55593e-02
+Iteration: 18
+  Device: "m"	RelError: 5.46950e+01	AbsError: 8.22065e-02
+    Region: "oxide"	RelError: 1.84695e-12	AbsError: 1.63203e-14
+      Equation: "PotentialEquation"	RelError: 1.84695e-12	AbsError: 1.63203e-14
+    Region: "sic"	RelError: 5.46950e+01	AbsError: 8.22065e-02
+      Equation: "PotentialEquation"	RelError: 5.46950e+01	AbsError: 8.22065e-02
+Iteration: 19
+  Device: "m"	RelError: 2.15761e+01	AbsError: 7.85165e-02
+    Region: "oxide"	RelError: 1.96700e-12	AbsError: 1.49325e-14
+      Equation: "PotentialEquation"	RelError: 1.96700e-12	AbsError: 1.49325e-14
+    Region: "sic"	RelError: 2.15761e+01	AbsError: 7.85165e-02
+      Equation: "PotentialEquation"	RelError: 2.15761e+01	AbsError: 7.85165e-02
+Iteration: 20
+  Device: "m"	RelError: 2.64385e+00	AbsError: 7.44213e-02
+    Region: "oxide"	RelError: 1.45392e-13	AbsError: 7.21645e-15
+      Equation: "PotentialEquation"	RelError: 1.45392e-13	AbsError: 7.21645e-15
+    Region: "sic"	RelError: 2.64385e+00	AbsError: 7.44213e-02
+      Equation: "PotentialEquation"	RelError: 2.64385e+00	AbsError: 7.44213e-02
+Iteration: 21
+  Device: "m"	RelError: 1.03028e-01	AbsError: 6.98326e-02
+    Region: "oxide"	RelError: 1.73888e-11	AbsError: 1.93623e-13
+      Equation: "PotentialEquation"	RelError: 1.73888e-11	AbsError: 1.93623e-13
+    Region: "sic"	RelError: 1.03028e-01	AbsError: 6.98326e-02
+      Equation: "PotentialEquation"	RelError: 1.03028e-01	AbsError: 6.98326e-02
+Iteration: 22
+  Device: "m"	RelError: 7.82368e-02	AbsError: 6.46331e-02
+    Region: "oxide"	RelError: 2.10606e-10	AbsError: 2.40563e-12
+      Equation: "PotentialEquation"	RelError: 2.10606e-10	AbsError: 2.40563e-12
+    Region: "sic"	RelError: 7.82368e-02	AbsError: 6.46331e-02
+      Equation: "PotentialEquation"	RelError: 7.82368e-02	AbsError: 6.46331e-02
+Iteration: 23
+  Device: "m"	RelError: 6.30519e-02	AbsError: 5.86662e-02
+    Region: "oxide"	RelError: 1.82928e-09	AbsError: 2.17344e-11
+      Equation: "PotentialEquation"	RelError: 1.82928e-09	AbsError: 2.17344e-11
+    Region: "sic"	RelError: 6.30519e-02	AbsError: 5.86662e-02
+      Equation: "PotentialEquation"	RelError: 6.30519e-02	AbsError: 5.86662e-02
+Iteration: 24
+  Device: "m"	RelError: 5.26505e-02	AbsError: 5.17227e-02
+    Region: "oxide"	RelError: 1.20313e-08	AbsError: 1.50011e-10
+      Equation: "PotentialEquation"	RelError: 1.20313e-08	AbsError: 1.50011e-10
+    Region: "sic"	RelError: 5.26505e-02	AbsError: 5.17227e-02
+      Equation: "PotentialEquation"	RelError: 5.26505e-02	AbsError: 5.17227e-02
+Iteration: 25
+  Device: "m"	RelError: 4.24340e-02	AbsError: 4.35335e-02
+    Region: "oxide"	RelError: 5.58392e-08	AbsError: 7.32698e-10
+      Equation: "PotentialEquation"	RelError: 5.58392e-08	AbsError: 7.32698e-10
+    Region: "sic"	RelError: 4.24340e-02	AbsError: 4.35335e-02
+      Equation: "PotentialEquation"	RelError: 4.24340e-02	AbsError: 4.35335e-02
+Iteration: 26
+  Device: "m"	RelError: 3.19048e-02	AbsError: 3.38100e-02
+    Region: "oxide"	RelError: 1.67561e-07	AbsError: 2.32217e-09
+      Equation: "PotentialEquation"	RelError: 1.67561e-07	AbsError: 2.32217e-09
+    Region: "sic"	RelError: 3.19046e-02	AbsError: 3.38100e-02
+      Equation: "PotentialEquation"	RelError: 3.19046e-02	AbsError: 3.38100e-02
+Iteration: 27
+  Device: "m"	RelError: 2.22925e-02	AbsError: 2.29771e-02
+    Region: "oxide"	RelError: 2.84641e-07	AbsError: 4.18589e-09
+      Equation: "PotentialEquation"	RelError: 2.84641e-07	AbsError: 4.18589e-09
+    Region: "sic"	RelError: 2.22922e-02	AbsError: 2.29771e-02
+      Equation: "PotentialEquation"	RelError: 2.22922e-02	AbsError: 2.29771e-02
+Iteration: 28
+  Device: "m"	RelError: 1.21775e-02	AbsError: 1.33409e-02
+    Region: "oxide"	RelError: 2.22658e-07	AbsError: 3.48069e-09
+      Equation: "PotentialEquation"	RelError: 2.22658e-07	AbsError: 3.48069e-09
+    Region: "sic"	RelError: 1.21772e-02	AbsError: 1.33409e-02
+      Equation: "PotentialEquation"	RelError: 1.21772e-02	AbsError: 1.33409e-02
+Iteration: 29
+  Device: "m"	RelError: 1.18372e-07	AbsError: 1.01856e-09
+    Region: "oxide"	RelError: 5.62927e-08	AbsError: 9.71508e-10
+      Equation: "PotentialEquation"	RelError: 5.62927e-08	AbsError: 9.71508e-10
+    Region: "sic"	RelError: 6.20795e-08	AbsError: 1.01856e-09
+      Equation: "PotentialEquation"	RelError: 6.20795e-08	AbsError: 1.01856e-09
+Iteration: 30
+  Device: "m"	RelError: 1.69912e-13	AbsError: 2.48882e-16
+    Region: "oxide"	RelError: 1.31640e-13	AbsError: 1.72783e-16
+      Equation: "PotentialEquation"	RelError: 1.31640e-13	AbsError: 1.72783e-16
+    Region: "sic"	RelError: 3.82717e-14	AbsError: 2.48882e-16
+      Equation: "PotentialEquation"	RelError: 3.82717e-14	AbsError: 2.48882e-16
+Warning: Replacing equation with equation of the same name.
+Region: sic, Equation: PotentialEquation, Variable: Potential
+Replacing Node Model source_phi in region sic of material SiC
+Replacing Node Model source_phi:Potential in region sic of material SiC
+Warning: Replacing Contact Equation with Contact Equation of the same name.
+Contact: source, Equation: PotentialEquation
+Replacing Node Model drain_phi in region sic of material SiC
+Replacing Node Model drain_phi:Potential in region sic of material SiC
+Warning: Replacing Contact Equation with Contact Equation of the same name.
+Contact: drain, Equation: PotentialEquation
+number of equations 21246
+Iteration: 0
+  Device: "m"	RelError: 5.50551e-01	AbsError: 3.15663e+04
+    Region: "oxide"	RelError: 3.40854e-14	AbsError: 2.63122e-16
+      Equation: "PotentialEquation"	RelError: 3.40854e-14	AbsError: 2.63122e-16
+    Region: "sic"	RelError: 5.50551e-01	AbsError: 3.15663e+04
+      Equation: "ElectronContinuityEquation"	RelError: 5.50551e-01	AbsError: 3.15663e+04
+      Equation: "PotentialEquation"	RelError: 8.19012e-14	AbsError: 4.00422e-16
+Iteration: 1
+  Device: "m"	RelError: 4.44794e-11	AbsError: 8.04565e+02
+    Region: "oxide"	RelError: 2.70703e-14	AbsError: 4.59462e-16
+      Equation: "PotentialEquation"	RelError: 2.70703e-14	AbsError: 4.59462e-16
+    Region: "sic"	RelError: 4.44523e-11	AbsError: 8.04565e+02
+      Equation: "ElectronContinuityEquation"	RelError: 4.43712e-11	AbsError: 8.04565e+02
+      Equation: "PotentialEquation"	RelError: 8.11234e-14	AbsError: 5.95512e-16
+--- end (1.39 s) ---
+
+nodes 10964, Potential -1.494 .. +1.567 V
+electrons 2.21e-36 .. 3.26e+18 cm^-3
+holes (p = ni exp(-Potential/Vt)) 7.07e-35 .. 1.90e+17 cm^-3
+saved docs/img/16/equilibrium_maps.png
+
+electron-only vs electrons + holes (VDS = 0.1 V):
+model               ID at VGS=4 V (A/cm)  ID at VGS=10 V (A/cm)  solves  time (s)
+electrons only          7.7585888315e-04       1.2175339962e-02      44      23.5
+electrons + holes       7.7585888315e-04       1.2175339962e-02      44      50.6
+                   hole current at the drain (VGS = 10 V): 6.3e-53 A/cm
+drain currents of the two models are bit-for-bit identical
