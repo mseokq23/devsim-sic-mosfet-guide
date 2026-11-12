@@ -1,4 +1,4 @@
-"""24. Inverse estimation with the paper's data: from I-V features back to W_JFET, N_pw and Qit,eff.
+"""24. Inverse estimation with the sic-mosfet-devsim data: from I-V features back to W_JFET, N_pw and Qit,eff.
 
   git clone https://github.com/mseokq23/sic-mosfet-devsim ../sic-mosfet-devsim
   python steps/24_inverse_gp.py --src ../sic-mosfet-devsim

@@ -5,7 +5,7 @@ velog 시리즈 **DEVSIM SiC MOSFET** 의 코드, 로그, 그림이 전부 여�
 
 - 시뮬레이터: DEVSIM 2.11.0 (Python 모듈) + MKL
 - 소자: 4H-SiC 평판형 MOSFET 2D half-cell (셀 피치 7 µm, 채널 0.5 µm, 게이트 산화막 50 nm), 300 K / 423 K
-- 물리 모델과 숫자는 논문 레포 [sic-mosfet-devsim](https://github.com/mseokq23/sic-mosfet-devsim)과 같음 (기준 소자 I–V가 비트 단위로 같게 나옴)
+- 물리 모델과 숫자는 [sic-mosfet-devsim](https://github.com/mseokq23/sic-mosfet-devsim) 레포와 같음 (기준 소자 I–V가 비트 단위로 같게 나옴). 24편은 이 레포의 계산 결과를 학습 데이터로 씀
 
 | 결과 | 300 K | 423 K |
 |---|---|---|
@@ -13,7 +13,7 @@ velog 시리즈 **DEVSIM SiC MOSFET** 의 코드, 로그, 그림이 전부 여�
 | SS | 112.5 mV/dec | 155.7 mV/dec |
 | R<sub>on,sp</sub> (V<sub>GS</sub> = 18 V) | 2.000 mΩ·cm² | 2.871 mΩ·cm² |
 | 메시 검증 (medium vs fine) | Vth 0.03 mV, Ron 0.9 % | |
-| 역추정 MAE<sub>norm</sub> (논문 데이터, GP) | 300 K 특징 0.112 → 300 + 423 K 특징 0.072 | |
+| 역추정 MAE<sub>norm</sub> (sic-mosfet-devsim 데이터, GP) | 300 K 특징 0.112 → 300 + 423 K 특징 0.072 | |
 | adjoint 민감도 vs 다시 풀기 | 상대 차이 4e-6 이하 | |
 
 ## 시작

@@ -20,7 +20,7 @@ BOUNDS = dict(wjfet_scale=(0.8, 1.2), npwell_scale=(0.8, 1.2), qit_eff_cm2=(-1.5
               mu_channel_scale=(0.8, 1.2))
 names = list(BOUNDS)
 u = qmc.Sobol(d=len(names), scramble=True, seed=7).random_base2(4)   # 2^4 = 16 points in [0, 1)^4
-# (the paper pool used seed 2026; another seed gives points that are not in the paper data)
+# (the sic-mosfet-devsim pool used seed 2026; another seed gives points that are not in that data)
 lo, hi = np.array([BOUNDS[k][0] for k in names]), np.array([BOUNDS[k][1] for k in names])
 x = lo + u * (hi - lo)
 design = ROOT / "configs" / "design_doe.csv"
